@@ -1,6 +1,15 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-    }
+
+//        BaseLogger[] loggers = new BaseLogger[]{new FileLogger(),new DatabaseLogger(),new EmailLogger()};
+//        for (BaseLogger logger:loggers){
+//            logger.Log("Log Mesajı");
+//        }
+//
+        CustomerManager customerManager = new CustomerManager(new DatabaseLogger());
+        customerManager.Add();
+        
+      }
 }
+// polymorphism
